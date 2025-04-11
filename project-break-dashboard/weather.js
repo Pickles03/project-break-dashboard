@@ -30,7 +30,7 @@ async function getWeather() {
             hourDiv.classList.add('hourForecast');
             hourDiv.innerHTML = `
                 <h3>${hour.time.split(' ')[1]}</h3>
-                <p>${hour.temp_c}°C</p>
+                <p>${Math.trunc(hour.temp_c)}°C</p>
                 <img src="${hour.condition.icon}" alt="Weather icon">
             `;
             forecastContainer.appendChild(hourDiv);

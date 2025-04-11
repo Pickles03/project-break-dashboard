@@ -2,10 +2,6 @@
     display: flex;
     gap: 20px;
     border: 1px solid #ccc;
-    width: fit-content;
-}
-
-#hourDiv {
-    width: 100px;
-    height: 100px;
+    overflow-x: auto;
+    max-width: 400px;
 }
