@@ -3,21 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Main Dashboard</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div id="menu">
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="clock.html">Clock</a></li>
-                    <li><a href="weather.html"></a>Weather</li>
-                    <li><a href="password.html"></a>Password</li>
-                    <li><a href=""></a>Links</li>
-                </ul>
-            </nav>
-        </header>
-    </div>
+
+    <main>
+        <section id="home"> 
+            <h2>Welcome to the Dashboard</h2>
+        </section>
+
+        <section id="clock" class="hidden"> 
+            <h2>Digital Clock and Date</h2>
+            <div id="clock" class="clockDate">
+                <p id="time" class="time"></p>
+                <p id="date" class="date"></p>
+            </div>
+        </section>
+
+        <section id="weather" class="hidden"> 
+            <div id="weatherDisplay" class="weatherDisplay"></div>
+        <div id="forecastContainer" class="forecastContainer"></div>
+        </section>
+
+        <section id="password" class="hidden"> 
+            <div id="pass" class="passGen">
+                <h1>Password Generator</h1>
+                <div class="passContainer">
+                    <input type="number" id="length" placeholder="Length of Password">
+                    <button id="generate">Generate Password</button>
+                    <input type="text" id="password" placeholder="Generated Password" readonly>
+                </div>
+            </div>
+        </section>
+
+        <section id="links" class="hidden"> 
+            <h2>Links of Interest</h2>
+            <div class="linkContainer" id="links">
+                <input type="text" id="linkTitle" placeholder="Title"/>
+                <input type="url" id="linkUrl" placeholder="URL"/>
+                <button id="addLink">Add link ✅</button>
+                <div class="linkList" id="linkList">
+                    <ul id="linksList"></ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="clock.html">Clock</a></li>
+                <li><a href="weather.html">Weather</a></li>
+                <li><a href="password.html">Password</a></li>
+                <li><a href="links.html">Links</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="clock.js"></script>
+    <script src="weather.js"></script>
+    <script src="password.js"></script>
+    <script src="links.js"></script>
+    <script src="bgi.js"></script>
 </body>
 </html>

@@ -36,6 +36,24 @@ btnGenerate.addEventListener('click', () => {
     else {
         alert('Please enter a valid length between 12 and 50.');
     }
+
+    passLength.value = ''; 
+
+    const existingCopyBtn = document.querySelector('.copy');
+    if (existingCopyBtn) {
+        existingCopyBtn.remove();
+    }
+
+    const copy = document.createElement('button');
+    copy.innerText = 'Copy Password';
+    copy.classList.add('copy');
+    password.parentElement.appendChild(copy);
+    copy.addEventListener('click', () => {
+        navigator.clipboard.writeText(password.value)
+        .then(() => {
+            copy.remove;
+        }) 
+        });
 });
 
 
