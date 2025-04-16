@@ -4,26 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Clock</title>
-    <link rel="stylesheet" href="clock.css">
+    <link rel="stylesheet" href="index.css">
 </head>
-<body>
-    <div id="clock" class="clockDate">
-        <p id="time" class="time"></p>
-        <p id="greeting" class="greeting"></p>
-        <p id="date" class="date"></p>
-    </div>
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="clock.html">Clock</a></li>
-                <li><a href="weather.html">Weather</a></li>
-                <li><a href="password.html">Password</a></li>
-                <li><a href="links.html">Links</a></li>
-            </ul>
-        </nav>
-    </footer>
+<body id="clockPage">
+    <div class="wrapper">
 
-    <script src="clock.js"></script>
+        <section id="clock" class="container1"> 
+            <div id="clock" class="clockDate">
+                <p id="time" class="time"></p>
+                <p id="greeting" class="greeting"></p>
+                <p id="date" class="date"></p>
+            </div>
+        </section>
+
+        <footer>
+            <div class="line">
+                <p>-------------------------------------------------</p>
+            </div>
+            <div class="icons">
+    
+                <ul>
+                    <li><a href="index.html">🏡</a></li>
+                    <li><a href="clock.html">🕒</a></li>
+                    <li><a href="weather.html">⛅</a></li>
+                    <li><a href="password.html">🔐</a></li>
+                    <li><a href="links.html">🔗</a></li>
+                </ul>
+            </div>
+        </footer>
+    
+        <script src="clock.js"></script>
+    </div>
 </body>
 </html>

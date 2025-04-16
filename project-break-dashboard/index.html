@@ -9,66 +9,71 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Honk&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
-
-    <main>
-        <section id="home">
-        </section>
-
-        <section id="clock" class="container1"> 
-            <div id="clock" class="clockDate">
-                <p id="time" class="time"></p>
-                <p id="greeting" class="greeting"></p>
-                <p id="date" class="date"></p>
-            </div>
-        </section>
-
-        <section id="weather" class="container2"> 
-            <div id="weatherDisplay" class="weatherDisplay"></div>
-        <div id="forecastContainer" class="forecastContainer"></div>
-        </section>
-
-        <section id="password" class="container3"> 
-            <div id="pass" class="passGen">
-                <h2>Create your own passowrd:</h2>
-                <div class="passContainer">
-                    <input type="number" id="length" placeholder="Length of Password">
-                    <button id="generate">Generate Password</button>
-                    <input type="text" id="password" placeholder="Generated Password" readonly>
+<body id="home">
+    <div class="wrapper">
+        <main>
+            <section id="home">
+            </section>
+    
+            <section id="clock" class="container1"> 
+                <div id="clock" class="clockDate">
+                    <p id="time" class="time"></p>
+                    <p id="greeting" class="greeting"></p>
+                    <p id="date" class="date"></p>
                 </div>
-            </div>
-        </section>
-
-        <section id="links" class="container4"> 
-            <h2>Links of Interest</h2>
-            <div class="linkContainer" id="links">
-                <input type="text" id="linkTitle" placeholder="Title"/>
-                <input type="url" id="linkUrl" placeholder="URL"/>
-                <button id="addLink">Add link ✅</button>
-                <div class="linkList" id="linkList">
-                    <ul id="linksList"></ul>
+            </section>
+    
+            <section id="weather" class="container2"> 
+                <div id="weatherDisplay" class="weatherDisplay"></div>
+                <div id="forecastContainer" class="forecastContainer"></div>
+            </section>
+    
+            <section id="password" class="container3"> 
+                <div id="pass" class="passGen">
+                    <h2>Create your own password:</h2>
+                    <div class="passContainer">
+                        <input type="number" id="length" placeholder="Length of Password">
+                        <button id="generate">Generate Password</button>
+                        <input type="text" id="generatedPassword" placeholder="Generated Password" readonly>
+                    </div>
                 </div>
+            </section>
+    
+            <section id="links" class="container4"> 
+                <h2>Links of Interest</h2>
+                <div class="linkContainer" id="links">
+                    <input type="text" id="linkTitle" placeholder="Title"/>
+                    <input type="url" id="linkUrl" placeholder="URL"/>
+                    <button id="addLink">Add link ✅</button>
+                    <div class="linkList" id="linkList">
+                        <ul id="linksList"></ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+    
+        <footer>
+            <div class="line">
+                <p>-------------------------------------------------</p>
             </div>
-        </section>
-    </main>
+            <div class="icons">
 
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="index.html">🏡</a></li>
-                <li><a href="clock.html">🕒</a></li>
-                <li><a href="weather.html">⛅</a></li>
-                <li><a href="password.html">🔐</a></li>
-                <li><a href="links.html">🔗</a></li>
-            </ul>
-        </nav>
-    </footer>
-
-    <script src="index.js"></script>
-    <script src="clock.js"></script>
-    <script src="weather.js"></script>
-    <script src="password.js"></script>
-    <script src="links.js"></script>
-    <script src="bgi.js"></script>
+                <ul>
+                    <li><a href="index.html">🏡</a></li>
+                    <li><a href="clock.html">🕒</a></li>
+                    <li><a href="weather.html">⛅</a></li>
+                    <li><a href="password.html">🔐</a></li>
+                    <li><a href="links.html">🔗</a></li>
+                </ul>
+            </div>
+        </footer>
+    
+        <script src="index.js"></script>
+        <script src="clock.js"></script>
+        <script src="weather.js"></script>
+        <script src="password.js"></script>
+        <script src="links.js"></script>
+        <script src="bgi.js"></script>
+    </div>
 </body>
 </html>

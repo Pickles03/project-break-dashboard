@@ -29,10 +29,11 @@ const updateClock = () => {
         greeting.innerHTML = "That lunch was delicious!";
     } else if (hours >= 17 && hours < 20) {
         greeting.innerHTML = "Good Evening!";
-    } else {
-        greeting.innerHTML = "Good Night 🌙!";
-    }
-};
+    } else if (hours >= 20 && hours < 22) {
+        greeting.innerHTML = "Hope you had a great day!";
+    } else if (hours >= 22 && hours < 24) {
+        greeting.innerHTML = "Sleep well! 🌙"; }
+}; 
 setInterval(updateClock, 1000); //this will call the function every second
 
 
