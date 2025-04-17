@@ -12,14 +12,19 @@ async function getWeather() {
 
         currentWeatherBarcelona.innerHTML = `
         <div class='currentWeather'>
-            <h2>Weather in Barcelona</h2>
-            <p>Temperature: ${data.current.temp_c}°C</p>
-            <p>Condition: ${data.current.condition.text}</p>
-            <img src="${data.current.condition.icon}" alt="Weather icon">
-            <p>Precipitation: ${data.current.precip_mm}mm</p>
-            <p>Humidity: ${data.current.humidity}%</p>
-            <p>Wind: ${data.current.wind_kph} km/h</p>
-            <p>Feels like: ${data.current.feelslike_c}°C</p>
+            <div class="locConIcon">
+                <h4>${data.location.name}:</h4>
+                <h4>${data.current.condition.text}</h4>
+                <img src="${data.current.condition.icon}" alt="Weather icon">
+            </div>
+            
+            <div class="currentWeatherDetails">
+                <p>Temperature: ${data.current.temp_c}°C</p>
+                <p>Precipitation: ${data.current.precip_mm}mm</p>
+                <p>Humidity: ${data.current.humidity}%</p>
+                <p>Wind: ${data.current.wind_kph} km/h</p>
+                <p>Feels like: ${data.current.feelslike_c}°C</p>
+            </div>
         </div>`;
 
         const forecast = data.forecast.forecastday[0].hour; //the 0 index is the current day

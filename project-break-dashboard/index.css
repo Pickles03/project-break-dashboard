@@ -82,30 +82,47 @@ h2 {
 }
 
 #home .container2 {
-    top: 10px;
-    right: 10px;
-}
-
-.weatherDisplau {
-    
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    right: 60px;    
+    top: 60px;
+    background-color: #ffffff61;
+    border-radius: 10px;
 }
 
 .currentWeather {
+    position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+}
+
+.locConIcon img {
+    width: 100px;
+    height: 100px;
+}
+
+.locConIcon {
+    gap: 8px;
+    margin: 0;
+    padding: 0;
 }
 
 .forecastContainer {
     display: flex;
     gap: 20px;
-    border: 1px solid #ccc;
     overflow-x: auto;
     max-width: 400px;
+    right: 10px;
 }
 
 #home .container3 {
-    bottom: 10px;
-    left: 10px;
+    bottom: 60px;
+    left: 60px;
 }
 
 .passContainer {
@@ -166,7 +183,8 @@ h2 {
 }
 
 #home .container4 {
-    position: fixed;
+    top: 60px;
+    left: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -255,6 +273,10 @@ h2 {
     right: -12px;
     background-color: rgba(0, 0, 0, 0);
     border: none;
+}
+
+.deleteLink:hover {
+    cursor: pointer;
 }
 
 footer {
