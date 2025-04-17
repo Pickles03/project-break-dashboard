@@ -86,6 +86,10 @@ h2 {
     right: 10px;
 }
 
+.weatherDisplau {
+    
+}
+
 .currentWeather {
     display: flex;
     flex-direction: column;
