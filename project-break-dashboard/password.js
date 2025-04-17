@@ -1,13 +1,16 @@
 /*
 
-<div id="pass" class="passGen">
-        <h1>Password Generator</h1>
+<section id="password" class="container3"> 
+    <div id="pass" class="passGen">
+        <h2>Create your own passowrd:</h2>
         <div class="passContainer">
             <input type="number" id="length" placeholder="Length of Password">
             <button id="generate">Generate Password</button>
             <input type="text" id="generatedPassword" placeholder="Generated Password" readonly>
+            <button id="copyLink"><img src="icons/copy.png" alt="copy button" width="30px"/></button>
         </div>
     </div>
+</section>
 
 
 */
@@ -15,6 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const passLength = document.getElementById('length');
     const password = document.getElementById('generatedPassword');
     const btnGenerate = document.getElementById('generate');
+    const copylink = document.getElementById('copyLink');
+    
 
     if (!passLength || !password || !btnGenerate) return;
 
@@ -42,4 +47,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
         passLength.value = '';
     });
+    
+    copylink.addEventListener('click', () => {
+        if (!password.value) {
+            alert('Please generate a password first.');
+        } else {
+            password.select();
+            navigator.clipboard.writeText(password.value);
+            alert(`Password copied to clipboard: ${password.value}`);
+        }
+    });
+    
+
 });

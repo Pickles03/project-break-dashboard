@@ -76,7 +76,7 @@ h2 {
 .clockDate .date {
     font-size: 20px;
     text-align: center;
-    margin:0;
+    margin: 10 0 0 0;
     padding: 0;
     font-weight: 400;
 }
@@ -84,6 +84,11 @@ h2 {
 #home .container2 {
     top: 10px;
     right: 10px;
+}
+
+.currentWeather {
+    display: flex;
+    flex-direction: column;
 }
 
 .forecastContainer {
@@ -97,6 +102,155 @@ h2 {
 #home .container3 {
     bottom: 10px;
     left: 10px;
+}
+
+.passContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: none;
+    padding: 10px;
+    max-width: 400px;
+}
+
+#generate {
+    width: fit-content;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(253, 253, 253, 0.37);
+    text-align: center;
+}
+
+#generate:hover {
+    box-shadow: black 3px 3px 5px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.537);
+    color: white;
+}
+
+#length, #generatedPassword {
+    font-size: 17px;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(253, 253, 253, 0.547);
+    width: 100%;
+}
+
+.copyBtn {
+    border: none;
+    border-radius: 5px;
+    vertical-align: middle;
+    background-color: rgba(0, 0, 0, 0);
+    width: fit-content;
+    padding: 0;
+    margin: 0;
+}
+
+.copyIcon {
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.copyIcon:hover {
+    cursor: pointer;
+}
+
+#home .container4 {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainSec {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#linkTitle, #linkUrl {
+    border-radius: 10px;
+    border: none;
+    font-size: 17px;
+    padding: 8px;
+    background-color: #ffffff81;
+}
+
+#addLink {
+    border: none;
+    border-radius: 5px;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.addIcon {
+    vertical-align: middle;
+}
+
+#addLink:hover {
+    box-shadow: black 3px 3px 5px;
+    cursor: pointer;
+}
+
+.linkList {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#linksList {
+    display: flex;
+    flex-direction: row;
+    max-width: 455px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    column-gap: 15px;
+    row-gap: 25px;
+    list-style: none;
+    padding: 0px;
+}
+
+#linksList li {
+    position: relative;
+}
+
+#linksList a {
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.525);
+    padding: 5px;
+    color: rgb(0, 0, 0);
+}
+
+#linksList a:hover {
+    background-color: black;
+    cursor: pointer;
+    color: white;
+}
+
+.deleteLink {
+    position: absolute;
+    top: -13px;
+    right: -12px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
 }
 
 footer {
