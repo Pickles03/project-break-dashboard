@@ -3,27 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password generator</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="../css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Honk&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body id="passwordPage">
+<body id="clockPage">
     <div class="wrapper">
 
-        <section id="password" class="container3"> 
-            <div id="pass" class="passGen">
-                <h2>Create your own passowrd:</h2>
-                <div class="passContainer">
-                    <input type="number" id="length" placeholder="Length of Password">
-                    <button id="generate">Generate Password</button>
-                    <input type="text" id="generatedPassword" placeholder="Generated Password" readonly>
-                    <button id="copyLink" class="copyBtn"><img src="icons/copy.png" alt="copy button" width="30px"/></button>
-                </div>
+        <section id="clockContainer"> 
+            <div id="clock" class="clockDate">
+                <p id="time" class="time"></p>
+                <p id="greeting" class="greeting"></p>
+                <p id="date" class="date"></p>
             </div>
         </section>
-    
+
         <footer>
             <div class="line">
                 <p>-------------------------------------------------</p>
@@ -39,9 +35,9 @@
                 </ul>
             </div>
         </footer>
+    
+        <script src="../js/clock.js"></script>
+        <script src="../js/bgi.js"></script>
     </div>
-
-    <script src="password.js"></script>
-    <script src="bgi.js"></script>
 </body>
 </html>

@@ -3,23 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Clock</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Weather</title>
+    <link rel="stylesheet" href="../css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Honk&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body id="clockPage">
+<body id="weatherPage">
     <div class="wrapper">
 
-        <section id="clockContainer"> 
-            <div id="clock" class="clockDate">
-                <p id="time" class="time"></p>
-                <p id="greeting" class="greeting"></p>
-                <p id="date" class="date"></p>
-            </div>
+        <section id="weather" class="container2"> 
+            <div id="weatherDisplay" class="weatherDisplay"></div>
+            <div id="forecastContainer" class="forecastContainer"></div>
         </section>
-
+    
         <footer>
             <div class="line">
                 <p>-------------------------------------------------</p>
@@ -35,9 +32,9 @@
                 </ul>
             </div>
         </footer>
-    
-        <script src="clock.js"></script>
-        <script src="bgi.js"></script>
     </div>
+
+    <script src="../js/weather.js"></script>
+    <script src="../js/bgi.js"></script>
 </body>
 </html>
