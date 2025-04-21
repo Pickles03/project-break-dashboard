@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const bgi = [{url: '../bgi/bgi1.jpg', tone: 'dark' }, 
-                {url: '../bgi/bgi2.jpg', tone: 'medium'},  
-                {url: '../bgi/bgi5.jpg', tone: 'light'}, 
-                {url: '../bgi/bgi6.jpg', tone: 'dark'}, 
-                {url: '../bgi/bgi7.jpg', tone: 'light'}, 
-                {url: '../bgi/bgi8.jpg', tone: 'medium'}, 
-                {url: '../bgi/bgi9.jpg', tone: 'dark'}, 
-                {url: '../bgi/bgi10.jpg', tone: 'medium'}
+    const bgi = [{url: 'bgi/bgi1.jpg', tone: 'dark' }, 
+                {url: 'bgi/bgi2.jpg', tone: 'medium'},  
+                {url: 'bgi/bgi5.jpg', tone: 'light'}, 
+                {url: 'bgi/bgi6.jpg', tone: 'dark'}, 
+                {url: 'bgi/bgi7.jpg', tone: 'light'}, 
+                {url: 'bgi/bgi8.jpg', tone: 'medium'}, 
+                {url: 'bgi/bgi9.jpg', tone: 'dark'}, 
+                {url: 'bgi/bgi10.jpg', tone: 'medium'}
             ];
 
     function randomizeBgi() {
